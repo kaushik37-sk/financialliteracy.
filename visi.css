@@ -1,0 +1,81 @@
+/* Visitor Counter Styling */
+.visitor-counter {
+  position: fixed;
+  top: 580px;
+  left: 20px;
+  background-color: rgba(30, 30, 30, 0.9); /* Darker background for contrast */
+  height: 90px;
+  width: 150px;
+  color: #fff; /* White text for visibility */
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Smooth rounded corners */
+  backdrop-filter: blur(15px); /* Stronger blur for modern feel */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow for depth */
+  z-index: 1000;
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effect */
+.visitor-counter:hover {
+  transform: scale(1.1); /* Larger scale on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Inner text styling */
+.visitor-counter div:first-child {
+  margin-bottom: 10px;
+  font-size: 16px; /* Slightly larger text for better readability */
+  letter-spacing: 1px;
+}
+
+/* Website counter text */
+.website-counter {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif; /* Modern and readable font */
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .visitor-counter {
+    height: 120px;
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .website-counter {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .visitor-counter {
+    height: 100px;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .website-counter {
+    font-size: 20px;
+  }
+}
+
+/* Dark Mode Styling */
+.dark-mode .visitor-counter div {
+  color: #f0f0f0; /* Light text for dark mode */
+}
+
+.dark-mode .visitor-counter .website-counter {
+  color: #f0f0f0; /* Light color for consistency */
+}
+
+.dark-mode .visitor-counter {
+  background-color: rgba(0, 0, 0, 0.85); /* Darker background for dark mode */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1), 
+              0 3px 6px rgba(255, 255, 255, 0.05);
+}
